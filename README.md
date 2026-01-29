@@ -1,5 +1,6 @@
 # nvim.init
 
 ## Dependencies
-Install ripgrep you big dummy
-Probably some other stuff. Idk yet. Working on it.
+- make (Install needed if on windows)
+- ripgrep (optional but recommended)
+
