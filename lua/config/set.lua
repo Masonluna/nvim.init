@@ -7,6 +7,9 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.smartindent = true
 
+vim.o.cindent = true
+vim.o.cinoptions = "l1,(0"
+
 vim.o.wrap = false
 
 vim.o.swapfile = false
