@@ -8,7 +8,7 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 vim.o.cindent = true
-vim.o.cinoptions = "l1,(0,:0"
+vim.o.cinoptions = "l1,(8,:0"
 
 vim.o.wrap = false
 
@@ -33,6 +33,6 @@ vim.o.signcolumn = "yes"
 vim.opt.isfname:append("@")
 vim.o.updatetime = 50
 
-vim.o.colorcolumn = "80"
+vim.o.colorcolumn = "120"
 
 vim.g.mapleader = " "
