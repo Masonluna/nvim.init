@@ -33,6 +33,6 @@ vim.o.signcolumn = "yes"
 vim.opt.isfname:append("@")
 vim.o.updatetime = 50
 
-vim.o.colorcolumn = "120"
+vim.o.colorcolumn = "100"
 
 vim.g.mapleader = " "
