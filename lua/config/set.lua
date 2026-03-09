@@ -8,7 +8,7 @@ vim.o.expandtab = true
 vim.o.smartindent = true
 
 vim.o.cindent = true
-vim.o.cinoptions = "l1,(8,:0"
+vim.o.cinoptions = "l1,(4,:0"
 
 vim.o.wrap = false
 
