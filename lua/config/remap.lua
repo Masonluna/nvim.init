@@ -10,6 +10,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set("n", "<leader>v", ":vsp<CR>")
+vim.keymap.set("n", "<leader>wh", "<C-w>h")
+vim.keymap.set("n", "<leader>wl", "<C-w>l")
+
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
 vim.keymap.set("n", "<leader>y", "\"+y")

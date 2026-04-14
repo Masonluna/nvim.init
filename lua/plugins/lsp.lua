@@ -44,6 +44,11 @@ return {
                             enable_import_completion = true,
                         })
                     end,
+                    ["yaml"] = function()
+                        require("lspconfig").yaml.setup({
+                            cmd = {'yaml-language-server'},
+                        })
+                    end,
                 },
             })
 
