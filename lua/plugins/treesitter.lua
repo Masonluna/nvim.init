@@ -25,6 +25,7 @@ return {
       'cpp',
       'go',
       'c_sharp',
+      'yaml',
       'zig',
       'sql',
     }

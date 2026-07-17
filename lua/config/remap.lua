@@ -11,12 +11,20 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>v", ":vsp<CR>")
+<<<<<<< HEAD
 vim.keymap.set("n", "[b", ":bp<CR>")
 vim.keymap.set("n", "]b", ":bn<CR>")
 vim.keymap.set('n', '<leader>wh', '<C-w>h')
 vim.keymap.set('n', '<leader>wl', '<C-w>l')
 vim.keymap.set('n', '<leader>wj', '<C-w>j')
 vim.keymap.set('n', '<leader>wk', '<C-w>k')
+=======
+vim.keymap.set("n", "<leader>h", ":sp<CR>")
+vim.keymap.set("n", "<leader>wh", "<C-w>h")
+vim.keymap.set("n", "<leader>wl", "<C-w>l")
+vim.keymap.set("n", "<leader>wj", "<C-w>j")
+vim.keymap.set("n", "<leader>wk", "<C-w>k")
+>>>>>>> e4b6992344fff4e4d1687998fd86699dcd8ab42c
 
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
