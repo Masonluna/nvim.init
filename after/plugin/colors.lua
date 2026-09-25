@@ -17,6 +17,8 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "@property", { fg = "#F6955B", italic = false })
     vim.api.nvim_set_hl(0, "Comment", { fg = "#eeeeee" })
     --Comment Color
+
+    vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#357a7a" })
 end
 
 ColorMyPencils()
