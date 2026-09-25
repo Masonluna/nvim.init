@@ -18,7 +18,11 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "Comment", { fg = "#eeeeee" })
     --Comment Color
 
-    vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#357a7a" })
+    vim.api.nvim_set_hl(0, 'DiffAdd', { bg = '#2e453b' })    
+    vim.api.nvim_set_hl(0, 'DiffChange', { bg = '#2e3b4e' }) 
+    vim.api.nvim_set_hl(0, 'DiffDelete', { bg = '#4e2e2e' }) 
+    vim.api.nvim_set_hl(0, 'DiffText', { bg = '#3d5e7a' })   
+
 end
 
 ColorMyPencils()
