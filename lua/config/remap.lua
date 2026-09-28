@@ -46,6 +46,8 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<C-_>", "<cmd>nohlsearch<CR>")
 
 -- Terminal Mode
+vim.keymap.set("n", "<leader>t", ":terminal<CR>")
+vim.keymap.set("v", "<leader>t", ":terminal<CR>")
 vim.keymap.set("t", "<C-t><C-c>", "<C-\\><C-N>")
 
 
