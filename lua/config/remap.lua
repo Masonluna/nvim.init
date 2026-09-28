@@ -71,3 +71,12 @@ vim.keymap.set("n", "<leader>o", function()
 	vim.system({ "devenv", path }, { detach = true })
 end, { silent = true })
 
+
+-- Git
+vim.keymap.set('n', '<leader>gf', ':Git fetch<CR>')
+vim.keymap.set('n', '<leader>gg', ':Git pull<CR>')
+vim.keymap.set('n', '<leader>gp', ':Git push<CR>')
+vim.keymap.set('n', '<leader>go', ':Git<CR>')
+vim.keymap.set('n', '<leader>gcb<Space>', ':Git branch ')
+vim.keymap.set('n', '<leader>gco<Space>', ':Git checkout ')
+
