@@ -76,7 +76,14 @@ end, { silent = true })
 vim.keymap.set('n', '<leader>gf', ':Git fetch<CR>')
 vim.keymap.set('n', '<leader>gg', ':Git pull<CR>')
 vim.keymap.set('n', '<leader>gp', ':Git push<CR>')
+vim.keymap.set('n', '<leader>gs', ':Git status<CR>')
+vim.keymap.set('n', '<leader>gc', ":Git commit<CR>")
+vim.keymap.set('n', '<leader>gp', ":Git push<CR>")
 vim.keymap.set('n', '<leader>go', ':Git<CR>')
-vim.keymap.set('n', '<leader>gcb<Space>', ':Git branch ')
+vim.keymap.set('n', '<leader>gb<Space>', ':Git branch ')
 vim.keymap.set('n', '<leader>gco<Space>', ':Git checkout ')
+
+-- Git (FLOG)
+-- I can't think of any time where I'd rather use :Flog instead of :Flogsplit
+vim.keymap.set('n', '<leader>F', ':Flogsplit<CR>')
 
