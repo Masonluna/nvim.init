@@ -64,3 +64,10 @@ vim.keymap.set("n", "<leader>u", "<cmd>Telescope undo<CR>", {
     desc = "Undo history (Telescope)",
 })
 
+
+-- Visual Studio (Only works if devenv works)
+vim.keymap.set("n", "<leader>o", function()
+	local path = vim.b.netrw_curdir .. "\\" .. vim.fn.getline("."):gsub("/$", "")
+	vim.system({ "devenv", path }, { detach = true })
+end, { silent = true })
+
