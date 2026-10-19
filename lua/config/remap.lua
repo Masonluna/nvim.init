@@ -83,6 +83,16 @@ vim.keymap.set('n', '<leader>go', ':Git<CR>')
 vim.keymap.set('n', '<leader>gb<Space>', ':Git branch ')
 vim.keymap.set('n', '<leader>gco<Space>', ':Git checkout ')
 
+-- Git (DIFFVIEW)
+vim.keymap.set('n', '<leader>gd', function()
+    vim.ui.input({ prompt = "Diff against branch: ", default = "main" }, function(base)
+        if base and base ~= "" then
+            vim.cmd("DiffviewOpen " .. base .. "...HEAD")
+        end
+    end)
+end, { desc = "Diffview: changes since fork point" })
+vim.keymap.set('n', '<leader>gD', ':DiffviewClose<CR>', { desc = "Diffview: close" })
+
 -- Git (FLOG)
 -- I can't think of any time where I'd rather use :Flog instead of :Flogsplit
 vim.keymap.set('n', '<leader>F', ':Flogsplit<CR>')

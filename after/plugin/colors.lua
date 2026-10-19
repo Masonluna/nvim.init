@@ -1,7 +1,4 @@
-function ColorMyPencils(color)
-	color = color or "TokyoDark"
-	vim.cmd.colorscheme(color)
-
+local function ApplyHighlights()
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
@@ -24,6 +21,15 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, 'DiffDelete', { bg = '#4e2e2e' }) 
     vim.api.nvim_set_hl(0, 'DiffText', { bg = '#3d5e7a' })   
 
+end
+
+-- Reapply overrides whenever any colorscheme loads (they are wiped otherwise)
+vim.api.nvim_create_autocmd("ColorScheme", { callback = ApplyHighlights })
+
+function ColorMyPencils(color)
+	color = color or "TokyoDark"
+	vim.cmd.colorscheme(color)
+	ApplyHighlights()
 end
 
 ColorMyPencils()

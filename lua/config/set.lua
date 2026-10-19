@@ -35,4 +35,6 @@ vim.o.updatetime = 50
 
 vim.o.colorcolumn = "100"
 
+vim.g.netrw_bufsettings = 'noma nomod rnu nowrap ro nobl'
+
 vim.g.mapleader = " "
